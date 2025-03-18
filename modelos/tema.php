@@ -1,1 +1,1 @@
-aqui va interaccion con los temas
+aqui va interaccion con los temas en la BD
