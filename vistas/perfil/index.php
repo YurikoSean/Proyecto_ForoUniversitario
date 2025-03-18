@@ -108,7 +108,7 @@ $posts = [
                 <?php endforeach; ?>
             </div>
 
-            <!-- Columna derecha (Notificaciones) -->
+            <!-- Notificaciones-->
             <div class="col-md-3">
                 <h4 class="">Notificaciones</h4>
                 <div class="list-group">
