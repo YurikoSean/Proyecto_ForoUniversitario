@@ -54,7 +54,7 @@
           <div class="form-check my-3">
             <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">
-              Acepto los <a href="../../inc/terminos.html" target="_blank">Términos y Condiciones </a>
+              Acepto los <a href="../../inc/terminos.html" >Términos y Condiciones </a>
             </label>
           </div>
         </div>
