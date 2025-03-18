@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,12 +33,12 @@
                 <input type="checkbox" value="remember-me"> Recuerdame
               </label>
             </div>
-            <a href="vistas/perfil.php" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>
+            <a href="#" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>
             <!--<button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>-->
             <div class="d-flex justify-content-center align-items-center" style="margin: 0;">
                 <span class="fw-bold fs-5">o</span>
               </div>
-            <a href="../maquetacion/vistas/registro.php" class="w-100 btn btn-lg btn-secondary mt-3 text-center">Crear cuenta</a>
+            <a href="registro.php" class="w-100 btn btn-lg btn-secondary mt-3 text-center">Crear cuenta</a>
             <hr class="my-4">
             <small class="text-body-primary bs-light">Al hacer click acepta los terminos y condiciones.</small>
           </form>
