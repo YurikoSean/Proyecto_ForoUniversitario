@@ -14,8 +14,8 @@ $posts = [
         'likes' => 35,
         'comentarios' => 10,
         'comentarios_lista' => [
-            ['autor' => 'Carlos', 'contenido' => '¡Muy interesante el artículo!'],
-            ['autor' => 'Ana', 'contenido' => 'Me encanta la tecnología, ¡sigan publicando más!']
+            ['autor' => 'Carlos', 'contenido' => 'Muy interesante el artículo'],
+            ['autor' => 'Ana', 'contenido' => 'Me encanta tu contenido']
         ]
     ],
     [
@@ -25,7 +25,7 @@ $posts = [
         'likes' => 22,
         'comentarios' => 5,
         'comentarios_lista' => [
-            ['autor' => 'Luis', 'contenido' => '¡Gran selección de álbumes!']
+            ['autor' => 'Luis', 'contenido' => 'Están buenos los álbumes']
         ]
     ],
     [
@@ -35,7 +35,7 @@ $posts = [
         'likes' => 40,
         'comentarios' => 15,
         'comentarios_lista' => [
-            ['autor' => 'Marta', 'contenido' => '¡No puedo esperar a verla!'],
+            ['autor' => 'Marta', 'contenido' => 'Este domingo iré a verla'],
             ['autor' => 'Jorge', 'contenido' => 'La trama me parece muy intrigante.']
         ]
     ]
@@ -72,7 +72,7 @@ $posts = [
             <div class="col-md-6">
                 <h3>Publicaciones de <?php echo $user['nombre']; ?></h3>
 
-                <?php foreach ($posts as $post): ?>
+                <?php foreach ($posts as $index => $post): ?>
                     <div class="card mb-3">
                         <img src="<?php echo $post['imagen']; ?>" class="card-img-top" alt="Imagen de publicación">
                         <div class="card-body">
@@ -85,13 +85,13 @@ $posts = [
                                     <span class="badge bg-primary"><?php echo $post['likes']; ?> Likes</span>
                                     <span class="badge bg-success"><?php echo $post['comentarios']; ?> Comentarios</span>
                                 </div>
-                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#comentarios<?php echo $post['titulo']; ?>" aria-expanded="false" aria-controls="comentarios<?php echo $post['titulo']; ?>">
+                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#comentarios<?php echo $index; ?>" aria-expanded="false" aria-controls="comentarios<?php echo $index; ?>">
                                     Ver comentarios
                                 </button>
                             </div>
 
                             <!-- Sección de comentarios -->
-                            <div class="collapse" id="comentarios<?php echo $post['titulo']; ?>">
+                            <div class="collapse" id="comentarios<?php echo $index; ?>">
                                 <div class="mt-3">
                                     <?php foreach ($post['comentarios_lista'] as $comentario): ?>
                                         <div class="mb-2">
@@ -113,7 +113,7 @@ $posts = [
                 <h4 class="">Notificaciones</h4>
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action">Nuevo comentario en tu publicación: "Avances en la inteligencia artificial"</a>
-                    <a href="#" class="list-group-item list-group-item-action">Tu publicación "Los mejores álbumes de 2024" ha recibido 5 likes</a>
+                    <a href="#" class="list-group-item list-group-item-action">Tu publicación "Los mejores álbumes de los 2000" ha recibido 5 likes</a>
                     <a href="#" class="list-group-item list-group-item-action">Nuevo comentario en tu publicación: "La última película de ciencia ficción"</a>
                     <a href="#" class="list-group-item list-group-item-action">Tu publicación "La última película de ciencia ficción" ha recibido 3 likes</a>
                 </div>
