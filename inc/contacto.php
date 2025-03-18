@@ -15,7 +15,7 @@
         <div class="container p-5">
             <div class="row">
                 <div class="col">
-                        <img class="mb-4" src="../../../img/robot_foro.png" alt="img logo" width="150" height="100">
+                        <img class="mb-4" src="../assets/img/robot_foro.png" alt="img logo" width="150" height="100">
                     <h1 class="h3 mb-3 fw-normal h1-new-user">Contacto</h1>
                 </div>
             </div>       
@@ -41,10 +41,6 @@
         </div> 
     </form>   
     </div>
-    <?php
-    /*FOOTER-*/
-    require_once ("footer.php");
-    ?>
     <!--Scrip bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
