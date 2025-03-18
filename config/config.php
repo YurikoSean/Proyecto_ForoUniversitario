@@ -1,3 +1,5 @@
+esto es un ejemplo de la configuracion del sistema de Javier
+
 <?php
 
 class Configuracion
