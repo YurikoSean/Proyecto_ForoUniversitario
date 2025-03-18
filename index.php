@@ -1,14 +1,13 @@
-<?php
-session_start();
-require_once("config/Configuracion.php");
-require_once("config/Enrutador.php");
-require_once("controladores/controlador.php");
+<!--HOLA-->
 
-$contro = new Controlador();
-
-$contro->main();
-
-/*
-$enru=new Enrutador();
-$enru->getRuta();*/
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOLA</h1>
+</body>
+</html>
