@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Redirige a index.php después de 2 segundos
             setTimeout(() => {
-                window.location.href = "../index.php";
+                window.location.href = "/proyecto_forouniversitario/vistas/home/index.php";
             }, 2000);
         }
     });
