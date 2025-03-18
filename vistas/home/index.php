@@ -32,7 +32,7 @@
                 <input type="checkbox" value="remember-me"> Recuerdame
               </label>
             </div>
-            <a href="#" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>
+            <a href="../../vistas/perfil/index.php" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>
             <!--<button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>-->
             <div class="d-flex justify-content-center align-items-center" style="margin: 0;">
                 <span class="fw-bold fs-5">o</span>
