@@ -15,7 +15,7 @@
         <div class="container p-5">
             <div class="row">
                 <div class="col">
-                        <img class="mb-4" src="../assets/img/robot_foro.png" alt="img logo" width="150" height="100">
+                        <img class="mb-4 logo img-fluid mx-auto d-block" src="../assets/img/robot_foro.png" alt="img logo" width="200" height="150">
                     <h1 class="h3 mb-3 fw-normal h1-new-user">Contacto</h1>
                 </div>
             </div>       
