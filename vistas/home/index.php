@@ -16,7 +16,6 @@
         <div class="col-lg-6 text-center text-lg-start">
           <img src="img/robot_foro.png" alt="Foro Universitario" class="logo img-fluid mx-auto d-block">
           <h1 class="display-3 fw-bold lh-1 text-body-emphasis mb-3 h1-tecno text-center fs-1 fs-md-2 fs-lg-3">  Foro_Universitario  </h1> 
-         <!-- <p class="col-lg-10 fs-4"> < Foro universitario > </p>-->
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
           <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
@@ -54,7 +53,7 @@
 
 ?>
     <!--Script JS-->
-    <script src="../js/validacionSesion.js"></script>
+    <script src="../../js/validacionSesion.js"></script>
     <!--Script bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
