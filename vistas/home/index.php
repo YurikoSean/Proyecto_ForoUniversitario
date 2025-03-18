@@ -50,7 +50,7 @@
 <?php
     /*FOOTER-*/
 
-    require_once ("vistas/inc/footer.php");
+    require_once ("../../inc/footer.php");
 
 ?>
     <!--Script JS-->
