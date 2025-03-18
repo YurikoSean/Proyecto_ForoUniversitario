@@ -47,9 +47,7 @@
 
 <?php
     /*FOOTER-*/
-
     require_once ("../../inc/footer.php");
-
 ?>
     <!--Script JS-->
     <script src="../../assets/js/validacionSesion.js"></script>
