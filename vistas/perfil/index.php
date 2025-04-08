@@ -82,10 +82,10 @@ $posts = [
                             <!-- Likes y comentarios -->
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <span class="badge bg-primary"><?php echo $post['likes']; ?> Likes</span>
-                                    <span class="badge bg-success"><?php echo $post['comentarios']; ?> Comentarios</span>
+                                    <span class="badge bg-primary btn-primary"><?php echo $post['likes']; ?> Likes</span>
+                                    <span class="badge bg-success btn-primary"><?php echo $post['comentarios']; ?> Comentarios</span>
                                 </div>
-                                <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#comentarios<?php echo $index; ?>" aria-expanded="false" aria-controls="comentarios<?php echo $index; ?>">
+                                <button class="btn btn-link btn-primary" data-bs-toggle="collapse" data-bs-target="#comentarios<?php echo $index; ?>" aria-expanded="false" aria-controls="comentarios<?php echo $index; ?>">
                                     Ver comentarios
                                 </button>
                             </div>

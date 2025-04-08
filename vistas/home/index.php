@@ -18,13 +18,13 @@
           <h1 class="display-3 fw-bold lh-1 text-body-emphasis mb-3 h1-tecno text-center fs-1 fs-md-2 fs-lg-3">  Foro_Universitario  </h1> 
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <form action="../../controladores/usuarioControlador.php" method="POST" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+              <input name="email"type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
               <label for="floatingInput">Email</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+              <input name="contrasena" type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
               <label for="floatingPassword">Contraseña</label>
             </div>
             <div class="checkbox mb-3">
@@ -32,8 +32,10 @@
                 <input type="checkbox" value="remember-me"> Recuerdame
               </label>
             </div>
-            <a href="../../vistas/perfil/index.php" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>
-            <!--<button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>-->
+            <!--<a href="../../vistas/perfil/index.php" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>-->
+            <!--Hemos creado esto para que se pueda pasar el boton por el POST-->
+            <input type="hidden" name="accion" value="login">
+            <button type="submit" class="w-100 btn btn-lg btn-primary" >Sign up</button>
             <div class="d-flex justify-content-center align-items-center" style="margin: 0;">
                 <span class="fw-bold fs-5">o</span>
               </div>
@@ -47,7 +49,9 @@
 
 <?php
     /*FOOTER-*/
+
     require_once ("../../inc/footer.php");
+
 ?>
     <!--Script JS-->
     <script src="../../assets/js/validacionSesion.js"></script>
