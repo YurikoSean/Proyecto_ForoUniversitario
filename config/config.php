@@ -5,11 +5,11 @@ class Configuracion
     private static $instance = null;
     private $conn;
 
-    private $rutaServidor = "http://localhost/ProyectosGitHub/Proyecto_ForoUniversitario";
+    private $rutaServidor = "http://localhost/Proyecto_ForoUniversitario";
     private $rutaBD = "localhost";
     private $usuarioBD = "root";
     private $passwordBD = "";
-    private $nombreBD = "forouniversitario";
+    private $nombreBD = "foro_universitario";
 
     // Constructor privado para evitar instanciación directa
     private function __construct() {

@@ -35,7 +35,7 @@
             <!--<a href="../../vistas/perfil/index.php" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>-->
             <!--Hemos creado esto para que se pueda pasar el boton por el POST-->
             <input type="hidden" name="accion" value="login">
-            <button type="submit" class="w-100 btn btn-lg btn-primary" >Sign up</button>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</button>
             <div class="d-flex justify-content-center align-items-center" style="margin: 0;">
                 <span class="fw-bold fs-5">o</span>
               </div>

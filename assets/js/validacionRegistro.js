@@ -15,8 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (apellido.length > 30) errores.push("El apellido debe tener máximo 30 caracteres.");
 
         // Validacion de la contraseña (solo alfanumérica)
-        if (!/^[a-zA-Z]+/.test(nombre&&apellido)) {
-            errores.push("La el nombre y apellido solo puede ser de la A - Z...");
+        if (!/^[a-zA-Z]+$/.test(nombre)) {
+            errores.push("El nombre solo puede contener letras.");
+        }
+        if (!/^[a-zA-Z]+$/.test(apellido)) {
+            errores.push("El apellido solo puede contener letras.");
         }
         
         // Validacion de Nick (solo letras y números, sin espacios, máx 10 caracteres)

@@ -13,7 +13,7 @@
   
 <div class="container d-flex flex-column min-vh-100">   
 <main class="form-signin w-50 m-auto">
-  <form id="registroForm" novalidate>
+  <form method="POST" action="../../controladores/usuarioControlador.php" id="registroForm" novalidate>
     <div class="container text-center">
       <div class="row">
         <div class="col align-self-center">
@@ -54,13 +54,14 @@
           <div class="form-check my-3">
             <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">
-              Acepto los <a href="../../inc/terminos.html" >Términos y Condiciones </a>
+              Acepto los <a href="../../inc/terminos.html" target="_blank">Términos y Condiciones </a>
             </label>
           </div>
         </div>
       </div>
   </div>
-  <button class="btn btn-primary w-100 py-2" type="submit">Confirmar</button>
+  <input type="hidden" name="accion" value="registrar">
+  <button id="registrarUsuario" name="registrarUsuario" class="btn btn-primary w-100 py-2" type="submit">Confirmar</button>
   </form>
 </main>
 </div>
