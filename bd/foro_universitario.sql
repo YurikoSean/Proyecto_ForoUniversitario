@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS forouniversitario;
 USE forouniversitario;
 
 -- Tabla de usuarios
-CREATE TABLE usuario (
+CREATE TABLE IF NOT EXISTS usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     apellidos VARCHAR(100) NOT NULL,

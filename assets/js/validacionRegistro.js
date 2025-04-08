@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#registroForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita que el formulario se envíe automáticamente
+        //event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
         let errores = [];
         let nombre = document.getElementById("floatingName").value.trim();
@@ -15,11 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (apellido.length > 30) errores.push("El apellido debe tener máximo 30 caracteres.");
 
         // Validacion de la contraseña (solo alfanumérica)
-        if (!/^[a-zA-Z]+$/.test(nombre)) {
-            errores.push("El nombre solo puede contener letras.");
-        }
-        if (!/^[a-zA-Z]+$/.test(apellido)) {
-            errores.push("El apellido solo puede contener letras.");
+        if (!/^[a-zA-Z]+/.test(nombre&&apellido)) {
+            errores.push("La el nombre y apellido solo puede ser de la A - Z...");
         }
         
         // Validacion de Nick (solo letras y números, sin espacios, máx 10 caracteres)
@@ -51,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!checkTerminos) {
             errores.push("Debes aceptar los términos y condiciones.");
         }
-
+        
         // Mostrar errores o mensaje de éxito
         if (errores.length > 0) {
             alert(errores.join("\n")); // Muestra los errores en una alerta
@@ -60,7 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Redirige a index.php después de 2 segundos
             setTimeout(() => {
-                window.location.href = "/proyecto_forouniversitario/vistas/home/index.php";
+                //He puesto esto, ya que con esa ruta no me redirecciona al index
+                //window.location.href = "/proyecto_forouniversitario/vistas/home/index.php";
+                window.location.href = "index.php";
             }, 2000);
         }
     });
