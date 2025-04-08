@@ -21,7 +21,7 @@
             <img src="../../assets/img/robot_foro.png" alt="Usuario" width="55" height="40" class="rounded-circle">
           </a>
           <ul class="dropdown-menu text-small" aria-labelledby="userDropdown">
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/perfil/index.php">Perfil</a></li>
             <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/perfil/configuracion.php">Configuración</a></li>
             <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
           </ul>

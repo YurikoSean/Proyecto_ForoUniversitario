@@ -23,7 +23,7 @@ $temas = ["Tecnología", "Música", "Películas y TV", "Naturaleza", "Interesant
 <div class="container mt-5">
     <h2 class="mb-4">Crear nuevo post</h2>
 
-    <form id="formNuevoPost" method="post" action="../../controladores/guardarPost.php" enctype="multipart/form-data" class="bg-body-tertiary p-4 rounded">
+    <form id="formNuevoPost" method="post" action="../../controladores/postControlador.php" enctype="multipart/form-data" class="bg-body-tertiary p-4 rounded">
         <div class="mb-3">
             <label for="titulo" class="form-label">Título del post</label>
             <input type="text" class="form-control" id="titulo" name="titulo" required>
