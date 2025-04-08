@@ -22,7 +22,7 @@
           </a>
           <ul class="dropdown-menu text-small" aria-labelledby="userDropdown">
             <li><a class="dropdown-item" href="#">Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configuración</a></li>
+            <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/perfil/configuracion.php">Configuración</a></li>
             <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
           </ul>
         </div>
