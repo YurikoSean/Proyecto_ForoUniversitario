@@ -11,7 +11,7 @@
         <form class="mx-3 w-50" role="search">
           <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
         </form>
-        <a href="func/nuevoPost.php" class="btn btn-primary">Crear Post</a>
+        <a href="//localhost/proyecto_forouniversitario/vistas/post/nuevoPost.php" class="btn btn-primary">Crear Post</a>
       </div>
 
       <!-- Sección Derecha: Imagen y Menú desplegable alineados a la derecha -->
