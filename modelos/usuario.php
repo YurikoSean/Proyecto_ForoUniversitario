@@ -48,6 +48,8 @@ class Usuario {
         $sql = "INSERT INTO usuario (nombre, apellidos, fecha_nacimiento, email, nick, contrasena)
                 VALUES (?, ?, ?, ?, ?, ?)";
     
+        $stmt = $this->conn->prepare($sql);
+        
         if ($stmt) {
             $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
             $stmt->bind_param("ssssss", $nombre, $apellidos, $fecha_nacimiento, $email, $nick, $contraseña);
