@@ -61,7 +61,7 @@ class UsuarioExistente {
                 $this->nick,
                 $this->contraseña
             );
-            header("Location: ../vistas/home/index.php");
+            header("Location:../vistas/home/index.php");
             exit;
         } else {
             echo "❌ Todos los campos son obligatorios.";
@@ -79,7 +79,7 @@ class UsuarioExistente {
             $this->buscarUsuario(); // Llamamos a la validación
         } else {
             echo "Datos inválidos";
-            header("Location: ../vistas/home/index.php");
+            header("Location:../vistas/home/index.php");
             exit;
         }
     }
@@ -90,11 +90,11 @@ class UsuarioExistente {
 
         if ($usuarioValido) {
             echo "✅ Ha funcionado";
-            header("Location: ../vistas/perfil/index.php");
+            header("Location:../vistas/perfil/index.php");
             exit;
         } else {
             echo "❌ Usuario o contraseña incorrectos.";
-            header("Location: ../vistas/home/index.php");
+            header("Location:../vistas/home/index.php");
             exit;
         }
     }

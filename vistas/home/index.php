@@ -1,15 +1,3 @@
-<?php
-// Inicia sesión para verificar si el usuario está logueado
-session_start();
-
-// Verifica si el usuario ya está logueado
-if (isset($_SESSION['usuario'])) {
-    // Si ya está logueado, redirige al perfil
-    header("Location: ../../vistas/perfil/index.php");
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,11 +32,13 @@ if (isset($_SESSION['usuario'])) {
                 <input type="checkbox" value="remember-me"> Recuerdame
               </label>
             </div>
+            <!--<a href="../../vistas/perfil/index.php" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</a>-->
+            <!--Hemos creado esto para que se pueda pasar el boton por el POST-->
             <input type="hidden" name="accion" value="login">
             <button type="submit" class="w-100 btn btn-lg btn-primary">Iniciar Sesión</button>
             <div class="d-flex justify-content-center align-items-center" style="margin: 0;">
                 <span class="fw-bold fs-5">o</span>
-            </div>
+              </div>
             <a href="registro.php" class="w-100 btn btn-lg btn-secondary mt-3 text-center">Crear cuenta</a>
             <hr class="my-4">
           </form>
@@ -56,15 +46,16 @@ if (isset($_SESSION['usuario'])) {
       </div>
     </div>
 
-    <!--FOOTER-->
-    <?php
-        require_once ("../../inc/footer.php");
-    ?>
 
+<?php
+    /*FOOTER-*/
+
+    require_once ("../../inc/footer.php");
+
+?>
     <!--Script JS-->
     <script src="../../assets/js/validacionSesion.js"></script>
-
-    <!-- Script Bootstrap -->
+    <!--Script bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
