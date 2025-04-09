@@ -49,7 +49,7 @@ class Usuario {
                 VALUES (?, ?, ?, ?, ?, ?)";
     
         $stmt = $this->conn->prepare($sql);
-        
+
         if ($stmt) {
             $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
             $stmt->bind_param("ssssss", $nombre, $apellidos, $fecha_nacimiento, $email, $nick, $contraseña);
@@ -67,7 +67,7 @@ class Usuario {
     }
     /* NUEVA FUNCION PARA VER SI EL USUARIO EXISTE NICK O CORREO */
     public function existeNickOCorreo($nick, $email) {
-        $sql = "SELECT id FROM usuario WHERE nick = ? OR email = ?";
+        $sql = "SELECT nick FROM usuario WHERE nick = ? OR email = ?";
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("ss", $nick, $email);
         $stmt->execute();
