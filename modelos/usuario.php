@@ -8,6 +8,10 @@ class Usuario {
         // Obtenemos la instancia única de Configuracion y su conexión
         $config = Configuracion::getInstance();
         $this->conn = $config->getConexion();
+        // Verificar si la conexión es válida
+        if ($this->conn->connect_error) {
+        die("❌ Error de conexión: " . $this->conn->connect_error);
+    }
     }
 
     public function buscarUsuario($usuario, $contraseña) {
@@ -42,30 +46,31 @@ class Usuario {
     }
 
     public function registrarUsuario($nombre, $apellidos, $fecha_nacimiento, $email, $nick, $contraseña, $rol = 'usuario') {
+        var_dump($nombre, $apellidos, $fecha_nacimiento, $email, $nick, $contraseña, $rol);
+        // Verificar si el código llega aquí
+        echo "Método registrarUsuario ejecutado"; 
+    
         // Si el rol es 'admin', primero verifica que no exista otro admin
         if ($rol === 'admin' && $this->verificarAdmin()) {
             echo "❌ Ya existe un usuario con el rol de admin.";
             return;
         }
     
-        // Si el rol no es especificado, se asigna 'usuario' por defecto
-        $rol = empty($rol) ? 'usuario' : $rol; 
-    
         $sql = "INSERT INTO usuario (nombre, apellidos, fecha_nacimiento, email, nick, contrasena, rol)
                 VALUES (?, ?, ?, ?, ?, ?, ?)";
-                
+    
         // Cifrar la contraseña antes de insertarla
         $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
     
         $stmt = $this->conn->prepare($sql);
-    
+        
         if ($stmt) {
             $stmt->bind_param("sssssss", $nombre, $apellidos, $fecha_nacimiento, $email, $nick, $contraseña, $rol);
     
             if ($stmt->execute()) {
                 echo "✅ Usuario registrado correctamente.";
             } else {
-                echo "❌ Error al registrar usuario: " . $stmt->error; // Muestra cualquier error
+                echo "❌ Error al registrar usuario: " . $stmt->error;
             }
     
             $stmt->close();
