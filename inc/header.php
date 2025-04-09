@@ -23,7 +23,7 @@
           <ul class="dropdown-menu text-small" aria-labelledby="userDropdown">
             <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/perfil/index.php">Perfil</a></li> 
             <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/perfil/configuracion.php">Configuración</a></li>
-            <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/home/index.php"">Cerrar Sesión</a></li>
+            <li><a class="dropdown-item" href="//localhost/proyecto_forouniversitario/vistas/perfil/cerrarSesion.php">Cerrar Sesión</a></li>
           </ul>
         </div>
       </div>

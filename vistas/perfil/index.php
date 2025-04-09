@@ -1,9 +1,15 @@
 <?php
-// Ejemplo de datos del usuario
-$user = [
-    'nombre' => 'Javier Martin',
-    'email' => 'javiermatin@correo.com',
-];
+session_start(); // Iniciar la sesión para acceder a los datos del usuario
+
+// Verificar si el usuario está logueado
+if (!isset($_SESSION['usuario'])) {
+    // Si no está logueado, redirigir a login
+    header("Location: /biblioteca/login.php");
+    exit(); // Detener la ejecución
+}
+
+// Obtener los datos del usuario desde la sesión
+$user = $_SESSION['usuario'];
 
 // Ejemplo para las publicaciones del usuario
 $posts = [
